@@ -1,0 +1,37 @@
+#about {
+  padding-top: 2em;
+  padding-bottom: 0em;
+}
+
+.about-content {
+  display: flex;
+}
+
+.cards {
+  display: flex;
+}
+
+
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary);
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.card-ajust {
+  display: flex;
+  justify-content: center;
+}
+
+
+@media (max-width: 998px) {
+  .about-content {
+    flex-direction: column;
+  }
+}

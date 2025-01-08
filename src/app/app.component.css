@@ -1,0 +1,21 @@
+.btn-topo {
+    position: fixed;
+    right: 15px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 13px 15px;
+    font-size: 22px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    bottom: 87px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-transparent);
+    border-radius: 50%;
+    display: inline-block;
+}

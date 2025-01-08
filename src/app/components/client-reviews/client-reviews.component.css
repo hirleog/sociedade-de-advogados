@@ -1,0 +1,142 @@
+#reviews {
+    padding-bottom: 9em;
+}
+
+#header-review {
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 0px 160px 0px;
+}
+
+.details h1,
+p {
+    text-align: center;
+}
+
+p {
+    /* text-transform: uppercase; */
+    font-size: 24px;
+    color: var(--light);
+    font-family: Oxanium;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.details h1 {
+    line-height: 1.2em;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 3px var(--primary);
+}
+
+.cards {
+    background-color: #000000;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-content {
+    display: flex;
+    align-items: end;
+
+}
+
+.card-text {
+    padding: 2em;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.card-text h4,
+h5,
+p {
+    text-align: left;
+}
+
+#review-title {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.review-btn {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 1em;
+}
+
+.fa-quote-left {
+    transform: scaleX(-1);
+    transform: rotate(180deg);
+    font-size: 8em;
+    color: var(--primary);
+}
+
+#img-circle {
+    display: none;
+}
+
+.quote-icon {
+    position: absolute;
+    top: 39%;
+    left: 11%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    margin: -85px 0px -67px 1em;
+}
+
+@media (max-width: 580px) {
+    .fa-quote-left {
+        font-size: 82px;
+        margin-top: 50px;
+    }
+
+    #img-circle img {
+        width: 90px !important;
+        height: 90px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .cards {
+        display: flex;
+        /* flex-direction: column; */
+        flex-direction: column-reverse;
+        /* Inverte a ordem dos itens na linha */
+        /* width: 70%; */
+    }
+
+    #header-review {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-header {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1em;
+        padding-top: 50px;
+        
+    }
+
+    .hide-img {
+        display: none;
+    }
+
+    #img-circle {
+        display: block;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: 3em;
+    }
+}
+
+/* @media (max-width: 1200px) {
+    .review-img {
+    }
+} */
