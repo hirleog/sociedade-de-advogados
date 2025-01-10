@@ -123,50 +123,35 @@ export class ServicesComponent implements OnInit {
 
   public goToServices(): void { }
 
-  public wppMessageOptions(option: any) {
-
-    const phoneNumber: string = '5511973752898'
-
-    switch (option) {
-      case 'Vitrificação de Pintura':
-        window.open(
-          `https://wa.me/${phoneNumber}?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20servi%C3%A7o%20de%20Vitrifica%C3%A7%C3%A3o%20de%20Pintura!`, "_blank"
-        );
-        break;
-      case ' Automotivo':
-        window.open(
-          `https://wa.me/${phoneNumber}?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20servi%C3%A7o%20de%20%20Automotivo!`, "_blank"
-        );
-        break;
-      case 'Higienização Interna':
-        window.open(
-          `https://wa.me/${phoneNumber}?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20serviço%20de%20Higienização%20Interna!`, "_blank"
-        );
-        break;
-
-      case 'Lavagem de Motor':
-        window.open(
-          `https://wa.me/${phoneNumber}?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20serviço%20de%20Lavagem%20de%20Motor!`, "_blank"
-        );
-        break;
-      case 'Lavagem de Chassi':
-        window.open(
-          `https://wa.me/${phoneNumber}?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20serviço%20de%20Lavagem%20de%20Chassi!`, "_blank"
-        );
-        break;
-      case 'Lavagem Detalhada':
-        window.open(
-          `https://wa.me/${phoneNumber}?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20serviço%20de%20Lavagem%20Detalhada!`, "_blank"
-        );
-        break;
-      case 'Lavagem convencional':
-        window.open(
-          `https://wa.me/${phoneNumber}?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20serviço%20de%20Lavagem%20convencional!`, "_blank"
-        );
-        break;
-      default:
-        break;
-    }
+  public wppMessageOptions(option: string): void {
+    const phoneNumber: string = '5511973752898';
+    
+    const messages: { [key: string]: string } = {
+      'Rescisão Contratual': 'Olá! Gostaria de saber mais sobre o serviço de Rescisão Contratual.',
+      'Reintegração': 'Olá! Gostaria de entender como funciona o serviço de Reintegração.',
+      'Assédio Moral': 'Olá! Preciso de informações sobre casos de Assédio Moral.',
+      'FGTS Retido': 'Olá! Tenho dúvidas sobre como liberar meu FGTS retido.',
+      'Acidente de Trabalho': 'Olá! Quero saber mais sobre os serviços relacionados a Acidente de Trabalho.',
+      'Adicional Noturno': 'Olá! Gostaria de saber mais sobre Adicional Noturno.',
+      'Horas Extras': 'Olá! Preciso de ajuda com questões relacionadas a Horas Extras.',
+      'Desvio de Função': 'Olá! Quero entender como lidar com um Desvio de Função.',
+      'Registro em Carteira': 'Olá! Gostaria de mais informações sobre Registro em Carteira.',
+      'Licença-Maternidade': 'Olá! Preciso de informações sobre Licença-Maternidade.',
+      'Equiparação Salarial': 'Olá! Quero saber mais sobre Equiparação Salarial.',
+      'Assédio Sexual': 'Olá! Preciso de orientação sobre Assédio Sexual.',
+      'Adicional de Insalubridade': 'Olá! Gostaria de entender mais sobre Adicional de Insalubridade.',
+      'Acordo Trabalhista': 'Olá! Quero mais informações sobre Acordo Trabalhista.',
+      'Estabilidade Gestante': 'Olá! Preciso saber mais sobre Estabilidade Gestante.',
+      'Previdência Social': 'Olá! Tenho dúvidas sobre Previdência Social.',
+      'Seguro-Desemprego': 'Olá! Gostaria de informações sobre Seguro-Desemprego.',
+      'Demissão por Justa Causa': 'Olá! Quero entender como funciona Demissão por Justa Causa.',
+      'Reclamação Trabalhista': 'Olá! Preciso de ajuda com uma Reclamação Trabalhista.',
+      'Contratos de Trabalho': 'Olá! Quero informações sobre Contratos de Trabalho.'
+    };
+  
+    const message = messages[option] || 'Olá! Gostaria de mais informações sobre seus serviços.';
+    
+    window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
   }
-
+  
 }

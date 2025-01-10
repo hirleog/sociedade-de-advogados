@@ -96,7 +96,7 @@ p {
 .view-more-btn {
     font-family: 'Oxanium', sans-serif;
     color: var(--light);
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     position: relative;
     display: inline-block;
     font-size: 18px;

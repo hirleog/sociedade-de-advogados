@@ -67,6 +67,7 @@
   display: flex;
   padding: 15px;
   padding-left: 5px;
+  cursor: pointer;
 }
 
 .about_practice_icontext .about_practice_icon {
