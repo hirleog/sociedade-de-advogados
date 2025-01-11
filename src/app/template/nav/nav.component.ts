@@ -12,12 +12,11 @@ export class NavComponent implements OnInit {
   previousScrollPosition = window.pageYOffset;
   navbarVisible = true;
   lastScrollTop = 0;
+  isAtTop!: boolean;
 
   constructor() { }
 
-  ngOnInit(): void {
-
-  }
+  ngOnInit(): void { }
 
   public menu() {
     this.openClose = !this.openClose;
@@ -27,6 +26,20 @@ export class NavComponent implements OnInit {
   onWindowScroll() {
     const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
+
+    // const element = document.getElementById('nav'); // Substitua 'nav' pelo ID real do elemento
+    // if (element) {
+    //   const rect = element.getBoundingClientRect();
+
+    //   // Verifica se o elemento atingiu exatamente o topo da tela
+    //   this.isAtTop = rect.top === 0;
+
+    //   console.log('Está no topo:', this.isAtTop);
+    // }
+
+
+
+    // Lógica de ocultar/mostrar o navbar com base no scroll
     if (currentScroll > this.lastScrollTop) {
       // Rolando para baixo: esconde o navbar
       this.scrolled = true;
@@ -38,7 +51,3 @@ export class NavComponent implements OnInit {
     this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
   }
 }
-
-
-
-
