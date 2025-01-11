@@ -1,6 +1,7 @@
 #about {
   padding-top: 2em;
-  padding-bottom: 0em;
+  padding-bottom: 2em;
+  /* background-color: var(--secondary-dark); */
 }
 
 .about-content {
@@ -73,17 +74,12 @@
   /* Espaçamento entre os elementos */
 }
 
-/* .card {
-  margin-right: 15px;
-} */
-
 .service-text {
   bottom: 50px;
   z-index: 2;
   left: 50px;
   width: 275px;
   position: absolute;
-  /* background-color: red; */
 }
 
 h4,

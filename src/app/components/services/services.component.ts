@@ -84,7 +84,7 @@ export class ServicesComponent implements OnInit {
         description: 'Negociação de acordos para evitar ações judiciais prolongadas.',
       },
       {
-        image: 'fa-solid fa-pregnant-woman',
+        image: 'fa-solid fa-person-pregnant',
         title: 'Estabilidade Gestante',
         description: 'Garantia da estabilidade da gestante no emprego até 5 meses após o parto.',
       },
