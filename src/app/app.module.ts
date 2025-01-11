@@ -13,6 +13,9 @@ import { ServicesComponent } from './components/services/services.component';
 import { FooterComponent } from './template/footer/footer.component';
 import { NavComponent } from './template/nav/nav.component';
 import { CardsComponent } from './components/cards/cards.component';
+import { WhyUsComponent } from './components/why-us/why-us.component';
+import { MidBannerComponent } from './components/mid-banner/mid-banner.component';
+import { WppBtnComponent } from './components/wpp-btn/wpp-btn.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +28,9 @@ import { CardsComponent } from './components/cards/cards.component';
     ClientReviewsComponent,
     CrudLivrosComponent,
     CardsComponent,
+    WhyUsComponent,
+    MidBannerComponent,
+    WppBtnComponent,
   ],
   imports: [
     BrowserModule,
