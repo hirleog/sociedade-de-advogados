@@ -10,37 +10,37 @@ export class ClientReviewsComponent implements OnInit {
     {
       text: 'O atendimento foi impecável! Superaram minhas expectativas com o serviço oferecido. Recomendo a todos!',
       client: 'Cliente 1',
-      photoUrl: '../../../assets/rick.png',  // URL da foto
+      photoUrl: '../../../assets/rick.webp',  // URL da foto
       rating: 5
     },
     {
       text: 'Muito satisfeita com o trabalho realizado. A equipe foi profissional e cuidadosa, com resultados que superaram as minhas expectativas.',
       client: 'Cliente 2',
-      photoUrl: '../../../assets/rick.png',  // URL da foto
+      photoUrl: '../../../assets/rick.webp',  // URL da foto
       rating: 4
     },
     {
       text: 'Excelente qualidade e ótimo atendimento. Me senti segura e bem atendida durante todo o processo. Voltarei com certeza!',
       client: 'Cliente 3',
-      photoUrl: '../../../assets/rick.png',  // URL da foto
+      photoUrl: '../../../assets/rick.webp',  // URL da foto
       rating: 5
     },
     {
       text: 'O serviço é muito bom! A equipe tem grande experiência e prestou um atendimento excepcional do início ao fim. Muito obrigado!',
       client: 'Cliente 4',
-      photoUrl: '../../../assets/rick.png',  // URL da foto
+      photoUrl: '../../../assets/rick.webp',  // URL da foto
       rating: 4
     },
     {
       text: 'Fiquei encantado com o resultado final. O cuidado com os detalhes e a dedicação da equipe fizeram toda a diferença. Recomendo de olhos fechados.',
       client: 'Cliente 5',
-      photoUrl: '../../../assets/rick.png',  // URL da foto
+      photoUrl: '../../../assets/rick.webp',  // URL da foto
       rating: 5
     },
     {
       text: 'A experiência foi muito boa. A equipe foi cordial, prestativa e a qualidade do serviço foi excelente. Voltarei sempre que precisar.',
       client: 'Cliente 6',
-      photoUrl: '../../../assets/rick.png',  // URL da foto
+      photoUrl: '../../../assets/rick.webp',  // URL da foto
       rating: 4
     },
   ];
