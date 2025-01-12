@@ -22,9 +22,9 @@ export class NavComponent implements OnInit {
     this.openClose = !this.openClose;
   }
 
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
-    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+  // @HostListener('window:scroll', [])
+  // onWindowScroll() {
+  //   const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
 
     // const element = document.getElementById('nav'); // Substitua 'nav' pelo ID real do elemento
@@ -40,14 +40,14 @@ export class NavComponent implements OnInit {
 
 
     // Lógica de ocultar/mostrar o navbar com base no scroll
-    if (currentScroll > this.lastScrollTop) {
-      // Rolando para baixo: esconde o navbar
-      this.scrolled = true;
-    } else {
-      // Rolando para cima: mostra o navbar
-      this.scrolled = false;
-    }
+  //   if (currentScroll > this.lastScrollTop) {
+  //     // Rolando para baixo: esconde o navbar
+  //     this.scrolled = true;
+  //   } else {
+  //     // Rolando para cima: mostra o navbar
+  //     this.scrolled = false;
+  //   }
 
-    this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-  }
+  //   this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+  // }
 }
