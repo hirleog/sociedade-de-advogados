@@ -1,4 +1,4 @@
-<div class="container my-5">
+<section id="questions" class="container my-5">
     <div style="display: flex;">
         <p class="title-detail">
             Dúvidas
@@ -10,12 +10,12 @@
         <div *ngFor="let faq of faqs; let i = index" class="accordion-item">
             <h2 class="accordion-header" [id]="'faqHeading' + i">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                    [attr.data-bs-target]="'#faqCollapse' + i" aria-expanded="false"
+                    [attr.data-bs-target]="'#faqCollapse' + i" [attr.aria-expanded]="i === 0 ? 'true' : 'false'"
                     [attr.aria-controls]="'faqCollapse' + i">
                     {{ faq.pergunta }}
                 </button>
             </h2>
-            <div [id]="'faqCollapse' + i" class="accordion-collapse collapse"
+            <div [id]="'faqCollapse' + i" class="accordion-collapse collapse" [ngClass]="{'show': i === 0}"
                 [attr.aria-labelledby]="'faqHeading' + i" data-bs-parent="#faqAccordion">
                 <div class="accordion-body">
                     {{ faq.resposta }}
@@ -23,4 +23,4 @@
             </div>
         </div>
     </div>
-</div>
+</section>

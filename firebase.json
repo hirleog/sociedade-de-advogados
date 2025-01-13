@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/sociedade-de-advogados",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

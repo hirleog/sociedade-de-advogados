@@ -84,11 +84,6 @@ export class ServicesComponent implements OnInit {
         description: 'Negociação de acordos para evitar ações judiciais prolongadas.',
       },
       {
-        image: 'fa-solid fa-person-pregnant',
-        title: 'Estabilidade Gestante',
-        description: 'Garantia da estabilidade da gestante no emprego até 5 meses após o parto.',
-      },
-      {
         image: 'fa-solid fa-heart',
         title: 'Previdência Social',
         description: 'Auxílio em questões relacionadas a INSS e benefícios previdenciários.',
@@ -110,6 +105,11 @@ export class ServicesComponent implements OnInit {
         description: 'Representação em reclamações por direitos trabalhistas não cumpridos.',
       },
       {
+        image: 'fa-solid fa-female',
+        title: 'Estabilidade Gestante',
+        description: 'Garantia da estabilidade da gestante no emprego até 5 meses após o parto.',
+      },
+      {
         image: 'fa-solid fa-file-alt',
         title: 'Contratos de Trabalho',
         description: 'Consultoria na elaboração ou revisão de contratos de trabalho.',
@@ -124,8 +124,8 @@ export class ServicesComponent implements OnInit {
   public goToServices(): void { }
 
   public wppMessageOptions(option: string): void {
-    const phoneNumber: string = '5511973752898';
-    
+    const phoneNumber: string = '5511949054658';
+
     const messages: { [key: string]: string } = {
       'Rescisão Contratual': 'Olá! Gostaria de saber mais sobre o serviço de Rescisão Contratual.',
       'Reintegração': 'Olá! Gostaria de entender como funciona o serviço de Reintegração.',
@@ -141,17 +141,17 @@ export class ServicesComponent implements OnInit {
       'Assédio Sexual': 'Olá! Preciso de orientação sobre Assédio Sexual.',
       'Adicional de Insalubridade': 'Olá! Gostaria de entender mais sobre Adicional de Insalubridade.',
       'Acordo Trabalhista': 'Olá! Quero mais informações sobre Acordo Trabalhista.',
-      'Estabilidade Gestante': 'Olá! Preciso saber mais sobre Estabilidade Gestante.',
+      'Reclamação Trabalhista': 'Olá! Preciso de ajuda com uma Reclamação Trabalhista.',
       'Previdência Social': 'Olá! Tenho dúvidas sobre Previdência Social.',
       'Seguro-Desemprego': 'Olá! Gostaria de informações sobre Seguro-Desemprego.',
       'Demissão por Justa Causa': 'Olá! Quero entender como funciona Demissão por Justa Causa.',
-      'Reclamação Trabalhista': 'Olá! Preciso de ajuda com uma Reclamação Trabalhista.',
+      'Estabilidade Gestante': 'Olá! Preciso saber mais sobre Estabilidade Gestante.',
       'Contratos de Trabalho': 'Olá! Quero informações sobre Contratos de Trabalho.'
     };
-  
+
     const message = messages[option] || 'Olá! Gostaria de mais informações sobre seus serviços.';
-    
+
     window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
   }
-  
+
 }

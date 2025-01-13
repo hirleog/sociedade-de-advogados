@@ -1,17 +1,17 @@
-<section id="reviews" data-aos="fade-down" data-aos-duration="900">
+<section id="reviews">
     <div id="content-section" class="content container">
         <div style="display: flex;">
             <p class="title-detail">
                 Reviews
             </p>
         </div>
-        <h2>
+        <h2 data-aos="fade-right" data-aos-duration="300">
             O que dizem sobre nós
         </h2>
     </div>
 
 
-    <div id="feedback-carousel" class="container py-5 desktop-tablet">
+    <div id="feedback-carousel" class="container py-5 desktop-tablet" >
         <div id="carouselFeedbacks" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item" *ngFor="let group of feedbackGroups; let i = index" [class.active]="i === 0">
@@ -57,11 +57,9 @@
     </div>
 
 
-
-
     <!-- CARROSSEL PARA MOBILE -->
 
-    <div id="feedback-carousel" class="container py-5 mobile">
+    <div id="feedback-carousel" class="container py-5 mobile" >
         <div id="carouselFeedbacks2" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item" *ngFor="let feedback of feedbacks; let i = index" [class.active]="i === 0">
