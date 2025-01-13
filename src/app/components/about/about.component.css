@@ -44,7 +44,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  font-size: 31px;
+  font-size: 37px;
   /* Ajusta o tamanho do ícone */
   color: #000;
   /* Cor do ícone */
@@ -82,9 +82,15 @@
   position: absolute;
 }
 
-h4,
+h4 {
+  color: var(--secondary-detail);
+  font-size: 32px;
+}
+
 h5 {
   color: var(--secondary-detail);
+  font-size: 25px;
+  /* width: 102%; */
 }
 
 .about_service_box {
@@ -145,13 +151,16 @@ h5 {
 /* ESTILOS DOS CARDS */
 
 
-@media (max-width: 768px) {
-  #about-img {
-    display: grid;
-    grid-template-columns: 1fr;
-    /* Uma única coluna */
-    gap: 15px;
-    /* Espaçamento entre os elementos */
+@media (max-width: 1168px) {
+  h4 {
+    color: var(--secondary-detail);
+    font-size: 22px;
+  }
+
+  h5 {
+    color: var(--secondary-detail);
+    font-size: 25px;
+    width: 100%;
   }
 }
 
@@ -159,4 +168,56 @@ h5 {
   .about-content {
     flex-direction: column;
   }
+
+  #about-img {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Uma única coluna */
+    gap: 15px;
+    /* Espaçamento entre os elementos */
+  }
+
+  h4 {
+    color: var(--secondary-detail);
+    /* font-size: 22px; */
+    font-size: 45px;
+    width: 200%;
+  }
+
+  h5 {
+    color: var(--secondary-detail);
+    font-size: 51px;
+    width: 300%;
+  }
 }
+
+@media (max-width: 768px) {
+  h4 {
+    color: var(--secondary-detail);
+    font-size: 22px;
+  }
+
+  h5 {
+    color: var(--secondary-detail);
+    font-size: 25px;
+    width: 100%;
+  }
+
+ .service-text {
+  max-width: 40%;
+ }
+}
+
+/* #about-img {
+    flex-direction: column;
+  }
+} */
+
+
+/* @media (max-width: 768px) {
+  #about-img {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Uma única coluna */
+/* gap: 15px; */
+/* Espaçamento entre os elementos */
